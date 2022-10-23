@@ -1,0 +1,240 @@
+/* 版心 */
+.wrapper{
+    width:1240px;
+    margin:0 auto;
+}
+/* 快捷导航 */
+.shortcut{
+    height:52px;
+    background-color: #333;
+}
+
+
+.shortcut .wrapper{
+    height: 52px;
+    
+
+}
+.shortcut .wrapper ul{
+    float:right;
+}
+.shortcut .wrapper ul li{
+    float:left;
+    line-height: 52px;
+   
+   
+}
+.shortcut .wrapper ul li a{
+    padding: 0 16px 0 16px;
+    border-right: 1px solid #666666;
+    font-size: 14px;
+    color:#dcdcdc;
+}
+.shortcut .wrapper ul li a span{
+    display:inline-block;
+    height: 16px;
+    width: 11px;
+    background-image: url(../images/sprites.png);
+    background-position:-160px -70px ;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+/* 头部 */
+.header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 70px;
+  
+}
+
+.logo{
+    float: left;
+    width: 250px;
+    height: 70px;
+    
+}
+/* log搜索引擎优化 */
+.logo h1{
+    margin-left: 25px;
+    width: 207px;
+    height: 70px;
+}
+.logo h1 a{
+    /* 隐藏文字 */
+    font-size: 0;
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-size: 100%;
+    background-image: url(../images/logo.png);
+}
+
+
+/* 导航区域 */
+.nav{
+    float: left;
+    margin-left: 20px;
+    height: 70px;
+    
+  
+}
+
+.nav ul li{
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+    padding-bottom: 7px;
+}
+.nav ul li a{
+    padding-bottom: 7px;
+    /* 添加下划线间隔 */
+}
+.nav ul li a:hover{
+    color:#27ba9b;
+    
+    border-bottom: 1px solid #27ba9b;;
+}
+
+.search{
+    float: left;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+
+}   
+
+.search input{
+    
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+.search input::placeholder{
+    font-size: 14px;
+    color:#ccc;
+}
+.search span{
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+
+
+.car{
+    position: relative;
+    float:left;
+    margin-top: 26px;
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position:-119px -69px ;
+}
+.car span{
+    /* 绝对定位，盒子具备行内块特点 */
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    color:white;
+    line-height: 15px;
+    text-align: center;
+    font-size: 13px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+
+}
+
+/* 版权区尾部 */
+.footer{
+    height:342px ;
+    background-color: #333333;
+}
+.footer .wrapper{
+    width: 1393px;
+}
+.footer .top{
+    padding-left: 135px;
+    padding-top: 60px;
+    height: 178px;
+    border-bottom: 3px solid #434343;
+}
+
+.footer .top li{
+    position: relative;
+    float: left;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+    margin-right: 300px;
+
+}
+.footer .top li:last-child{
+    margin-right: 0;
+}
+
+.footer .top li::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    /* display: inline-block; */
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+
+.footer .top li span{
+    margin-left: 77px;
+
+    color:#ffffff;
+    font-size: 28px;
+}
+.footer .top li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+.footer .top li:nth-child(3)::before{
+    background-position: -130px 0;
+}
+
+.footer .bottom{
+     padding-top: 43px;
+    
+}
+.footer .bottom ul{
+    display: block;
+    height: 14px;
+    text-align: center;
+    margin-left:428px ;
+ 
+}
+.footer .bottom p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.footer .bottom li a{
+    display: block;
+    float: left;
+    border-right: 1px solid #999;
+    font-size: 14px;
+    color: #999999;
+    width: 92px;
+    text-align: center;
+}
+/* 取消最后一个li有边框 */
+
+.footer .bottom li:last-child a{
+    border-right: 0;
+}

@@ -1,0 +1,150 @@
+@import url(./base.less);
+
+@color: #fb7299;
+@vSize: 3.75vw;
+
+
+// 头部固定
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: (85/@vSize);
+    z-index: 999;
+    background-color: #fff;
+    // top区域
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 (12/@vSize) 0 (18/@vSize);
+        width: (345/@vSize);
+        height: (45/@vSize);
+
+        .left {
+            i {
+                font-size: (28/@vSize);
+                color: @color;
+            }
+        }
+
+        .right {
+            // 若使用行内块则换行会有空格，使用flex最佳
+            display: flex;
+
+            // 搜索图标
+            i {
+                font-size: (22/@vSize);
+                color: rgb(204, 204, 204);
+            }
+
+            // 头像
+            .login {
+                height: (24/@vSize);
+                width: (24/@vSize);
+                margin-left: (20/@vSize);
+                margin-right: (20/@vSize);
+            }
+
+            // 下载图标
+            .download {
+                height: (24/@vSize);
+                width: (72/@vSize);
+
+            }
+        }
+    }
+
+    // bottom区域
+    .bottom {
+        display: flex;
+        height: (40/@vSize);
+        border-bottom: 1px solid #eee;
+        justify-content: space-between;
+        align-items: center;
+
+        .tab {
+            ul {
+                display: flex;       
+                li {
+                    padding: 0 (16/@vSize);
+                    width: (60/@vSize);
+                    height: 100%;
+                    a {
+                        display: block;  
+                        line-height: (37/@vSize);
+                        text-align: center;
+                        font-size: (14/@vSize);
+                        border-bottom: 2px solid #fff;
+                        &:hover {
+                            color: @color;
+                            border-bottom: 2px solid @color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .more {
+            width: (40/@vSize);
+            text-align: center;
+
+            i {
+                font-size: (21/@vSize);
+                color: #aaa;;
+            }
+        }
+    }
+}
+
+
+// 视频区域
+    .video{
+        padding: (84/@vSize) (5/@vSize) 0;
+
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                 width:50%;
+                 padding: (8/@vSize) (5/@vSize);
+                font-size: (12/@vSize);
+                .pic{
+                    position: relative;
+                    .count{
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        color: #fff;
+                        width: 100%;
+                        left: 0;
+                        bottom:0;
+                        padding: (8/@vSize);
+                        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+                        i{
+                            vertical-align:middle;
+                        }
+                    }
+                }
+              
+                .txt{
+                    margin-top: (5/@vSize);
+                }
+            }
+        }
+    }
+
+    // 底部
+    footer{
+        width: 90%;
+        height: (40/@vSize);
+        background-color:@color;
+        position: fixed;
+        transform: translateX(5.5%);
+        left: 0;
+        bottom: 10%;
+        line-height: (40/@vSize);
+        text-align: center;
+        border-radius: (20/@vSize);
+        
+    }

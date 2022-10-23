@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6E7EB;
+    overflow: hidden;
+}
+
+.wrapper {
+
+    width: 1840px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    background-color: #ebeced;
+}
+
+/* logo区域 */
+.header .logo {
+    width: 300px;
+    padding-left: 50px;
+}
+
+/* 搜索区域 */
+.header .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+
+}
+
+.header .search #searchIpt {
+    height: 36px;
+    width: 200px;
+    text-indent: 20px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #66757e;
+}
+
+#searchIpt::placeholder {
+    font-size: 14px;
+}
+
+.header .search #searchBtn {
+    width: 50px;
+    height: 60%;
+    border: none;
+    background-color: #8089F6;
+    color: #F6FBFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 搜索按钮停留变色 */
+.header .search #searchBtn:hover {
+    background-color: #616ef8;
+}
+
+
+
+
+
+
+/* 管理员设置 */
+.header .setting {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 880px;
+    width: 180px;
+}
+
+/* 按钮组 */
+.setting .btns {
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    transition: all 1s;
+}
+
+.setting .btns:hover {
+
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+svg {
+    transition: all 1s;
+}
+
+
+
+.btns:nth-child(1):hover svg,
+.btns:nth-child(2):hover svg {
+    transform: rotate(180deg);
+}
+
+/* 齿轮旋转 */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* linear 表示匀速 infinite 无限次 */
+#set {
+    animation: rotate 2s linear infinite;
+}
+
+
+
+
+.main {
+    position: relative;
+    margin-top: 30px;
+    height: 800px;
+}
+
+.footer {
+    height: 80px;
+    background-color: skyblue;
+}
+
+.nav {
+    position: relative;
+    left: 0%;
+    float: left;
+    width: 240px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #6c757d;
+    letter-spacing: 3px
+}
+
+/* 头像与字幕区域 */
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+}
+
+/* 字幕区域 */
+#talk {
+    width: 240px;
+    text-align: center;
+    color: #97989b;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.list>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.list>#title {
+    text-indent: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.list_nav {
+    height: 40px;
+    width: 240px;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    text-indent: 20px;
+}
+
+.list_nav:hover {
+    color: skyblue;
+}
+
+
+
+
+
+
+/* 导航栏底部图片 */
+.nav>.bgimg {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+/* 内容区域 */
+.body {
+    float: left;
+    width: 1390px;
+    height: 800px;
+    margin-left: 40px;
+    color: #97989b;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 1390px;
+    height: 300px;
+}
+
+/* 轮播图 */
+.carousel {
+    width: 900px;
+    background-color: skyblue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+/* 公告栏 */
+.notice {
+    position: relative;
+    width: 450px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.notice>.head {
+    display: block;
+    height: 60px;
+    border-bottom: 1px solid #97989b;
+}
+
+/* 右上角针头 */
+.notice>.head #dz {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+}
+
+/* 公告图标 */
+.notice_img {
+    width: 25px;
+    height: 25px;
+}
+
+.notice_info {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.notice_info>li {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.layui-progress {
+    background-color: transparent;
+}
+
+
+.article {
+
+    width: 1390px;
+    height: 800px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artLi {
+    display: flex;
+    width: 48%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #3a3b3b;
+    cursor: pointer;
+}
+
+
+.artLi>.article_img {
+    overflow: hidden;
+}
+
+.artLi>.article_img img {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.article_info {
+    width: 417px;
+}
+
+
+.artLi:nth-child(n+7) {
+    display: none;
+}
